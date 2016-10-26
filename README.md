@@ -1,11 +1,12 @@
-# Alfresco Activiti JAR Module - SDK 3
+# Activiti Extension Module for blog "Getting Started with Alfresco Activiti Enterprise"
+
+See: https://docs.google.com/document/d/1ggrlWtSTxjvlbL0KzZSkZ6rmNu6wud5T4es8zeqTMyU/pub
 
 To run use `mvn clean install alfresco:run` or `./run.sh` and verify that it 
 
  * Runs the embedded Tomcat + H2 DB 
- * Runs Activiti Explorer
- * Optionally runs Activiti REST
- * Packages both a JAR with customization
+ * Runs Activiti App
+ * Packages both a JAR with customization and a ZIP with the whole Activiti App
   
 # Few things to notice
 
@@ -13,8 +14,6 @@ To run use `mvn clean install alfresco:run` or `./run.sh` and verify that it
  * WAR assembly is handled by the Alfresco Maven Plugin configuration
  * Standard JAR packaging and layout
  * Works seamlessly with Eclipse and IntelliJ IDEA
- * JRebel for hot reloading, JRebel maven plugin for generating rebel.xml, agent usage: `MAVEN_OPTS=-Xms256m -Xmx1G -agentpath:/home/martin/apps/jrebel/lib/libjrebel64.so`
- * [Configurable Run mojo](https://github.com/Alfresco/alfresco-sdk/blob/sdk-3.0/plugins/alfresco-maven-plugin/src/main/java/org/alfresco/maven/plugin/RunMojo.java) in the `alfresco-maven-plugin`
  * No unit testing/functional tests just yet
     
   
